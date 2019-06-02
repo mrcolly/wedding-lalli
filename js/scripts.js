@@ -65,6 +65,18 @@ $(document).ready(function () {
         height: 800
     });
 
+    $(".owl-carousel").owlCarousel({
+        center: true,
+        items:2,
+        loop:true,
+        margin:10,
+        responsive:{
+            600:{
+                items:4
+            }
+        }
+    });
+
     /***************** Tooltips ******************/
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -251,7 +263,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var la_fiesta = {lat: 45.6348822, lng: 9.3028483};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,

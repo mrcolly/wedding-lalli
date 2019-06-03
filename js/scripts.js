@@ -242,7 +242,7 @@ $(document).ready(function () {
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
         
         console.log(data);
-        $.post('https://script.google.com/macros/s/AKfycby2kIHaM2U2XGTVF1tg3hH3LAeOzkQrut8bTZbnUWYSU0giQyF_/exec', data)
+        $.post('https://script.google.com/macros/s/AKfycbyNvl-7-GDPyXUsgL_lxMvH5d6i9777r99FEQ_4Rl8rb2lE997Q/exec', data)
             .done(function (data) {
                 console.log(data);
                 $('#alert-wrapper').html('');

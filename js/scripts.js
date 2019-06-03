@@ -247,9 +247,15 @@ $(document).ready(function () {
         console.log(data);
         $.post('https://script.google.com/macros/s/AKfycbyNvl-7-GDPyXUsgL_lxMvH5d6i9777r99FEQ_4Rl8rb2lE997Q/exec', data)
             .done(function (data) {
-                console.log(data);
-                $('#alert-wrapper').html('');
-                $('#rsvp-modal').modal('show');
+                var jsonData = JSON.parse(data);
+                console.log(jsonData);
+                if(jsonData.status !== "OK"){
+                    $('#alert-wrapper').html(alert_markup('danger', jsonData.message));
+                }else{
+                    $('#alert-wrapper').html('');
+                    $('#rsvp-modal').modal('show');
+                }
+                
             })
             .fail(function (data) {
                 console.log(data);

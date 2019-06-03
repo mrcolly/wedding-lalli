@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+    /***************** populate code from parameter ******************/
+
+    var invitationCode = getUrlParameter('invitationCode');
+    if(invitationCode != null){
+        console.log(invitationCode)
+        $('#invite_code').val(invitationCode);
+    }
+
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {

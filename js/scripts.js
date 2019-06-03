@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     var invitationCode = getUrlParameter('invitationCode');
     if(invitationCode != null){
-        console.log(invitationCode)
+        console.log("code :"+ invitationCode);
         $('#invite_code').val(invitationCode);
     }
 

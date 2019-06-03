@@ -70,9 +70,16 @@ $(document).ready(function () {
         items:2,
         loop:true,
         margin:10,
+        nav:false,
         responsive:{
+            200:{
+                items:1,
+            },
             600:{
-                items:4
+                items:3,
+            },
+            1000:{
+                items:5,
             }
         }
     });

@@ -8,6 +8,12 @@ $(document).ready(function () {
         $('#invite_code').val(invitationCode);
     }
 
+    var name = getUrlParameter('name');
+    if(name != null){
+        console.log("name :"+ name);
+        $('#name').val(name);
+    }
+
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {

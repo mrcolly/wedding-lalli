@@ -203,6 +203,9 @@ $(document).ready(function () {
     });
 
     /********************** Add to Calendar **********************/
+
+    //TODO
+
     var myCalendar = createCalendar({
         options: {
             class: '',
@@ -211,7 +214,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Matrimonio di Alice e Andrea",
 
             // Event start date
             start: new Date('Nov 27, 2017 10:00'),

@@ -10,6 +10,7 @@ $(document).ready(function () {
 
     var name = getUrlParameter('name');
     if(name != null){
+        name = name.replace('+', ' ');
         console.log("name :"+ name);
         $('#name').val(name);
     }

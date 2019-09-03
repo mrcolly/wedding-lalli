@@ -21,7 +21,9 @@ gulp.task('sass:watch', function () {
 // minify js
 gulp.task('minify-js', function () {
     return gulp.src('./js/scripts.js')
-        .pipe(uglify())
+        .pipe(uglify().on('error', function(e){
+            console.log(e);
+         }))
         .pipe(rename({basename: 'scripts.min'}))
         .pipe(gulp.dest('./js'));
 });

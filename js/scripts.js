@@ -38,11 +38,20 @@ $(document).ready(function () {
         }
     });
 
-    console.log($('.clock').width())
-    if($('.clock').width()<690){
-        wWidth = $(window).width();
-        $('.clock').style.transform = "scale("+wWidth+")";
-    }
+    $(function () {
+        var clockwidth = 750;
+        function resizeClock(){
+            var wWidth = $(window).width();
+            console.log(clockwidth);
+            console.log(wWidth);
+            if(clockwidth > wWidth){
+                $('.clock').css('zoom', (wWidth/clockwidth)-0.05);
+                
+            }
+        }
+        resizeClock();
+        $(window).resize(resizeClock);
+    });
     
     /***************** Waypoints ******************/
 

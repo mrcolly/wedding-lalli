@@ -42,8 +42,6 @@ $(document).ready(function () {
         var clockwidth = 750;
         function resizeClock(){
             var wWidth = $(window).width();
-            console.log(clockwidth);
-            console.log(wWidth);
             if(clockwidth > wWidth){
                 $('.clock').css('zoom', (wWidth/clockwidth)-0.05);
                 

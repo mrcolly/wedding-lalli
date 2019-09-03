@@ -21,7 +21,7 @@ $(document).ready(function () {
     var currentDate = new Date();
     
     // Set some date in the future. In this case, it's always Jan 1
-    var futureDate  = new Date(2020,6,11,10,0);
+    var futureDate  = new Date('Jul 11, 2020 11:00');
 
     // Calculate the difference in seconds between the future and current date
     var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
@@ -38,6 +38,12 @@ $(document).ready(function () {
         }
     });
 
+    console.log($('.clock').width())
+    if($('.clock').width()<690){
+        wWidth = $(window).width();
+        $('.clock').style.transform = "scale("+wWidth+")";
+    }
+    
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {
@@ -82,6 +88,31 @@ $(document).ready(function () {
     });
     $('.wp9').waypoint(function () {
         $('.wp9').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wpA1').waypoint(function () {
+        $('.wpA1').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wpA2').waypoint(function () {
+        $('.wpA2').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wpA3').waypoint(function () {
+        $('.wpA3').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
+    $('.wpA4').waypoint(function () {
+        $('.wpA4').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+    $('.wpA5').waypoint(function () {
+        $('.wpA5').addClass('animated fadeInRight');
     }, {
         offset: '75%'
     });
@@ -247,17 +278,17 @@ $(document).ready(function () {
             title: "Matrimonio di Alice e Andrea",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Jul 11, 2020 11:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Jul 12, 2020 11:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'Via Rapazzini, 2, 20855 Lesmo MB',
 
             // Event Description
             description: "We can't wait to see you on our big day. For any queries or issues contact Mr. Amit Roy at +91 9435021804 or +91 7086018971."
@@ -272,7 +303,7 @@ $(document).ready(function () {
         e.preventDefault();
         var data = JSON.stringify($(this).serializeFormJSON());
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Un secondo!</strong> Stiamo salvando i tuoi dettagli.'));
         
         console.log(data);
         $.post('https://script.google.com/macros/s/AKfycbyNvl-7-GDPyXUsgL_lxMvH5d6i9777r99FEQ_4Rl8rb2lE997Q/exec', data)

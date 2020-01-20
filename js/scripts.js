@@ -123,6 +123,11 @@ $(document).ready(function () {
     }, {
         offset: '75%'
     });
+    $('.wpA6').waypoint(function () {
+        $('.wpA6').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'
+    });
 
     /***************** Initiate Flexslider ******************/
     $('.flexslider').flexslider({

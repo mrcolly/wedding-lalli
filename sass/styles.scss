@@ -162,7 +162,7 @@ Animations
 /* ==========================================================================
 Waypoinsts
 ========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wpA1, .wpA2, .wpA3, .wpA4, .wpA5  {
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wpA1, .wpA2, .wpA3, .wpA4, .wpA5, .wpA6  {
   visibility: hidden
 }
 .wp8, .wp9 {
@@ -902,6 +902,11 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+
+img.responsive{
+  width: 100%;
+  height: auto;
 }
 
 /* ==========================================================================

@@ -151,6 +151,7 @@ $(document).ready(function () {
         items:2,
         loop:true,
         margin:10,
+        autoHeight:true,
         nav:false,
         responsive:{
             200:{

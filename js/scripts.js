@@ -2,11 +2,11 @@ $(document).ready(function () {
 
     /***************** populate code from parameter ******************/
 
-    var invitationCode = getUrlParameter('invitationCode');
-    if(invitationCode != null){
-        console.log("code :"+ invitationCode);
-        $('#invite_code').val(invitationCode);
-    }
+    // var invitationCode = getUrlParameter('invitationCode');
+    // if(invitationCode != null){
+    //     console.log("code :"+ invitationCode);
+    //     $('#invite_code').val(invitationCode);
+    // }
 
     var name = getUrlParameter('name');
     if(name != null){

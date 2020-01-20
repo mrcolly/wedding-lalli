@@ -193,7 +193,7 @@ $(document).ready(function () {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "none",
-                    "padding": "35px 0"
+                    "padding": "25px 0"
                 });
                 $('header .member-actions').css({
                     "top": "26px",

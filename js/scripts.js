@@ -155,9 +155,6 @@ $(document).ready(function () {
         nav:true,
         dots: false,
         responsive:{
-            200:{
-                items:1,
-            },
             600:{
                 items:3,
             },

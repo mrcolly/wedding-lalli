@@ -153,6 +153,7 @@ $(document).ready(function () {
         margin:10,
         autoHeight:true,
         nav:false,
+        dots: false,
         responsive:{
             200:{
                 items:1,

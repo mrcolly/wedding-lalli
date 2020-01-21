@@ -152,7 +152,7 @@ $(document).ready(function () {
         loop:true,
         margin:10,
         autoHeight:true,
-        nav:true,
+        nav:false,
         dots: false,
         responsive:{
             600:{

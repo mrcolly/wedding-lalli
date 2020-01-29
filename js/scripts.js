@@ -150,6 +150,7 @@ $(document).ready(function () {
         center: true,
         items:2,
         lazyLoad:true,
+        lazyLoadEager:7,
         loop:false,
         margin:10,
         autoHeight:true,

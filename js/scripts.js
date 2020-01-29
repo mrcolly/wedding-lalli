@@ -149,6 +149,7 @@ $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         center: true,
         items:2,
+        lazyLoad:true,
         loop:true,
         margin:10,
         autoHeight:true,

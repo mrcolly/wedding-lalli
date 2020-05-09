@@ -21,7 +21,7 @@ $(document).ready(function () {
     var currentDate = new Date();
     
     // Set some date in the future. In this case, it's always Jan 1
-    var futureDate  = new Date('Jul 11, 2020 11:00');
+    var futureDate  = new Date('Sep 12, 2020 11:00');
 
     // Calculate the difference in seconds between the future and current date
     var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
@@ -291,14 +291,14 @@ $(document).ready(function () {
             title: "Matrimonio di Alice e Andrea",
 
             // Event start date
-            start: new Date('Jul 11, 2020 11:00'),
+            start: new Date('Sep 12, 2020 11:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Jul 12, 2020 11:00'),
+            end: new Date('Sep 13, 2020 11:00'),
 
             // Event Address
             address: 'Via Rapazzini, 2, 20855 Lesmo MB',
